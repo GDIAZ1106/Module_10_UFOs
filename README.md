@@ -25,11 +25,13 @@ Update and populate the dynamic filters and table using JavaScript and HTML.
 We have incorporated to the webpage a set of filters that allow the user to look for any criteria on the database, the procedure is quite simple:
 
 1 - Use any or all the filteres provided according to the search parameters provided
+
 2 - Click on the "Filter Table" bottom to display the requested search.
+
 3 - Use the bottom "Clear Filters" to reset the table and perform a new search. 
 
 <p align = "center">
-  <img src="https://github.com/GDIAZ1106/Module_11_UFOs/blob/main/resources/filter_tutorial.png?raw=true" width="800" height="400" />
+  <img src="https://github.com/GDIAZ1106/Module_11_UFOs/blob/main/resources/filter_tutorial.png?raw=true" />
   
 
 ### **Summary**
