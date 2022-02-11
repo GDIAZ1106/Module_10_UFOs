@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trip to Mars</title>
+    <title>UFO FINDER</title>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />    
-    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static_/css/style.css">
 
 </head>
 <body class="bg-dark">
@@ -39,14 +39,34 @@
                       <form class="bg-dark">
                         <p>Filter Search</p>
                         <ul class="bg-dark list-group">
-                            <li class="bg-dark list-group-item">
-                                <label for="date">Enter Date</label>
-                                <input type="text" class="btn-dark" placeholder="1/10/2010" id="datetime" />
-                            </li>
-                            <li class="bg-dark list-group-item">
-                                <button id="filter-btn" type="button" class="btn-dark">Filter Table</button>
-                             </li>
-                        </ul>
+                          <li class="list-group-item bg-dark">
+                            <label for="date">Date:</label>
+                            <input type="text" placeholder="MM/DD/YYYY" id="datetime" style="position:absolute; left:125px; top:10px"/>
+                        </li>
+                        <li class="list-group-item bg-dark">
+                            <label for="city">Enter City:</label>
+                            <input type="text" placeholder=" " id="city" style="position:absolute; left:125px; top:10px" />
+                        </li>
+                        <li class="list-group-item bg-dark">
+                            <label for="state">Enter State:</label>
+                            <input type="text" placeholder=" " id="state" style="position:absolute; left:125px; top:10px"/>
+                        </li>
+                        <li class="list-group-item bg-dark">
+                            <label for="country">Enter Country:</label>
+                            <input type="text" placeholder=" " id="country" style="position:absolute; left:125px; top:10px"/>
+                        </li>
+                        <li class="list-group-item bg-dark">
+                            <label for="shape">Enter Shape:</label>
+                            <input type="text" placeholder=" " id="shape" style="position:absolute; left:125px; top:10px"/>
+                        </li>
+                        <li class="list-group-item bg-dark">
+                        <button id="filter-btn" type="button" class="btn btn-primary">Filter Table</button>    
+                        </li>
+                        </li>
+                        <li class="list-group-item bg-dark">
+                        <button id="clear-btn" type="button" class="btn btn-danger">Clear Filters</button>     
+                        </li>
+                    </ul>
                       </form>
                     </div>
                   <div class="bg-dark col-md-9">
@@ -62,14 +82,16 @@
                               <th>Comments</th>
                             </tr>
                         </thead>
+                        <tbody> </tbody>
                     </table>
                   </div>
               </div>
+          </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+    <script src="static_/js/data.js"></script>
+    <script src="static_/js/app.js"></script>   
 
-      </div>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
-      <script src="/static_1/js1/data.js"></script>
-      <script src="/static_1/js1/app.js"></script>
 </body>
 
 </html>
